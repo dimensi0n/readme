@@ -20,5 +20,5 @@ sudo pacman -S ruby
 Then run the install script
 
 ```sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/dimensi0n/gitman/master/install.sh)"
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/dimensi0n/gitman/master/install.sh)"
 ```
