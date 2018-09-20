@@ -1,0 +1,27 @@
+#!/bin/bash
+
+LIST=$(echo $1 | tr ":" "\n")
+ARGS=()
+for seg in $LIST
+do
+	ARGS+=($seg)
+done
+
+LINK=$(echo ${ARGS[1]} | tr "/" "-")
+
+if [ ${ARGS[0]} = 'github' ]; then
+	if [ -f ~/.docky/$LINK/README.md ]; then
+		mdless ~/.docky/$LINK/README.md
+	else
+		RESPONSE=$(wget -q "https://raw.githubusercontent.com/${ARGS[1]}/master/README.md" -P ~/.docky/$LINK)
+        	mdless ~/.docky/$LINK/README.md
+	fi
+elif [ ${ARGS[0]} = 'gitlab' ]; then
+	if [ -f ~/.docky/$LINK/README.md ]; then
+                mdless ~/.docky/$LINK/README.md
+        else
+                RESPONSE=$(wget -q "https://gitlab.com/${ARGS[1]}/raw/master/README.md" -P ~/.docky/$LINK)
+                mdless ~/.docky/$LINK/README.md
+        fi
+
+fi
