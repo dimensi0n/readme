@@ -1,17 +1,17 @@
-# gitman
+# readme
 README.md To Text with the power of git
 
 ## Install
 
 First you need to install Ruby.
 
-* Ubuntu/Debian
+- Ubuntu/Debian
 
 ```sh
 sudo apt-get install ruby
 ```
 
-* ArchLinux
+- ArchLinux
 
 ```sh
 sudo pacman -S ruby
@@ -20,5 +20,17 @@ sudo pacman -S ruby
 Then run the install script
 
 ```sh
-sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/dimensi0n/gitman/master/install.sh)"
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/dimensi0n/readme/master/install.sh)"
+```
+
+## Usage
+
+```sh
+readme [github|gitlab]:user/repository
+```
+
+Example :
+
+```sh
+readme github:dimensi0n/stor
 ```
