@@ -13,13 +13,13 @@ gem install mdless
 #---
 ## Curl the file and move it to /bin
 #---
-sudo curl https://raw.githubusercontent.com/dimensi0n/gitman/master/gitman -o /bin/gitman
+sudo curl https://raw.githubusercontent.com/dimensi0n/gitman/master/readme -o /bin/readme
 
 #---
 ## Add permission
 #---
-sudo chmod +x /bin/gitman
+sudo chmod +x /bin/readme
 
 ## Echo if it's installed
 #---
-echo '> Gitman is installed'
+echo '> Readme is installed'
