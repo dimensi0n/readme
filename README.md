@@ -20,7 +20,7 @@ sudo pacman -S ruby
 Then run the install script
 
 ```sh
-sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/dimensi0n/readme/master/install.sh)"
+sudo sh -c "$(curl -fsSL https://bit.ly/2QPcBFY)"
 ```
 
 ## Usage
