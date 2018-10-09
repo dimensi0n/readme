@@ -1,6 +1,14 @@
 #!/bin/bash
 
 #---
+## Check number of arguments
+#---
+if [ "$#" -ne 1 ]; then
+	echo "Usage: readme [github|gitlab]:user/repository"
+	exit
+fi
+
+#---
 ## Split arguments
 #---
 LIST=$(echo $1 | tr ":" "\n")
